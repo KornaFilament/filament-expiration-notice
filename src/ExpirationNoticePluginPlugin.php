@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace MarcelWeidum\ExpirationNoticePlugin;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class ExpirationNoticePluginPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-expiration-notice';
     }
 
     public function register(Panel $panel): void

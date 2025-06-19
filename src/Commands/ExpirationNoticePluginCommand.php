@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace MarcelWeidum\ExpirationNoticePlugin\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ExpirationNoticePluginCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-expiration-notice';
 
     public $description = 'My command';
 
