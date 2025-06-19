@@ -1,4 +1,4 @@
-# Customize the livewire expiration notice
+# Filament Expiration Notice
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/marcelweidum/filament-expiration-notice.svg?style=flat-square)](https://packagist.org/packages/marcelweidum/filament-expiration-notice)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/marcelweidum/filament-expiration-notice/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/marcelweidum/filament-expiration-notice/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -7,7 +7,7 @@
 
 
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Customize the livewire expiration notice.
 
 ## Installation
 
