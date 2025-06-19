@@ -1,7 +1,6 @@
 # Filament Expiration Notice
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/marcelweidum/filament-expiration-notice.svg?style=flat-square)](https://packagist.org/packages/marcelweidum/filament-expiration-notice)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/marcelweidum/filament-expiration-notice/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/marcelweidum/filament-expiration-notice/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/marcelweidum/filament-expiration-notice/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/marcelweidum/filament-expiration-notice/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/marcelweidum/filament-expiration-notice.svg?style=flat-square)](https://packagist.org/packages/marcelweidum/filament-expiration-notice)
 
