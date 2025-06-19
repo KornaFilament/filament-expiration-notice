@@ -56,9 +56,6 @@ final class ExpirationNoticeServiceProvider extends PackageServiceProvider
             $this->getAssetPackageName()
         );
 
-        // Testing
-        // Testable::mixin(new TestsExpirationNoticePlugin);
-
         FilamentView::registerRenderHook(
             PanelsRenderHook::PAGE_START,
             fn (): View => view('filament-expiration-notice::session-expired-modal'),
