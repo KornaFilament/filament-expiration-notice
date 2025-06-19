@@ -7,6 +7,9 @@ namespace MarcelWeidum\ExpirationNoticePlugin;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
+use Filament\Support\Facades\FilamentView;
+use Filament\View\PanelsRenderHook;
+use Illuminate\View\View;
 use Livewire\Features\SupportTesting\Testable;
 use MarcelWeidum\ExpirationNoticePlugin\Testing\TestsExpirationNoticePlugin;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
@@ -37,6 +40,10 @@ final class ExpirationNoticeServiceProvider extends PackageServiceProvider
         if (file_exists($package->basePath('/../resources/lang'))) {
             $package->hasTranslations();
         }
+
+        if (file_exists($package->basePath('/../resources/views'))) {
+            $package->hasViews(self::$viewNamespace);
+        }
     }
 
     public function packageRegistered(): void {}
@@ -50,7 +57,12 @@ final class ExpirationNoticeServiceProvider extends PackageServiceProvider
         );
 
         // Testing
-        Testable::mixin(new TestsExpirationNoticePlugin);
+        // Testable::mixin(new TestsExpirationNoticePlugin);
+
+        FilamentView::registerRenderHook(
+            PanelsRenderHook::PAGE_START,
+            fn (): View => view('filament-expiration-notice::session-expired-modal'),
+        );
     }
 
     protected function getAssetPackageName(): ?string
