@@ -1,6 +1,6 @@
 <?php
 
-// translations for MarcelWeidum/ExpirationNoticePlugin
+// translations for MarcelWeidum/ExpirationNotice
 return [
     //
 ];

@@ -16,7 +16,7 @@ use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class ExpirationNoticePluginServiceProvider extends PackageServiceProvider
+class ExpirationNoticeServiceProvider extends PackageServiceProvider
 {
     public static string $name = 'filament-expiration-notice';
 

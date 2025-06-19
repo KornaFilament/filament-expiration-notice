@@ -1,6 +1,6 @@
 <?php
 
-// config for MarcelWeidum/ExpirationNoticePlugin
+// config for MarcelWeidum/ExpirationNotice
 return [
 
 ];

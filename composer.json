@@ -63,7 +63,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MarcelWeidum\\ExpirationNoticePlugin\\ExpirationNoticePluginServiceProvider"
+                "MarcelWeidum\\ExpirationNoticePlugin\\ExpirationNoticeServiceProvider"
             ],
             "aliases": {
                 "ExpirationNoticePlugin": "MarcelWeidum\\ExpirationNoticePlugin\\Facades\\ExpirationNoticePlugin"
