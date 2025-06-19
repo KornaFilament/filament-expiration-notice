@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MarcelWeidum\ExpirationNoticePlugin\Facades;
 
 use Illuminate\Support\Facades\Facade;
@@ -7,7 +9,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \MarcelWeidum\ExpirationNoticePlugin\ExpirationNotice
  */
-class ExpirationNoticePlugin extends Facade
+final class ExpirationNoticePlugin extends Facade
 {
     protected static function getFacadeAccessor()
     {

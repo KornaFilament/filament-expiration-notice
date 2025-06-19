@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MarcelWeidum\ExpirationNoticePlugin\Commands;
 
 use Illuminate\Console\Command;
 
-class ExpirationNoticePluginCommand extends Command
+final class ExpirationNoticePluginCommand extends Command
 {
     public $signature = 'filament-expiration-notice';
 

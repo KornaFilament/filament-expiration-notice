@@ -1,12 +1,27 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MarcelWeidum\ExpirationNoticePlugin;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class ExpirationNoticePlugin implements Plugin
+final class ExpirationNoticePlugin implements Plugin
 {
+    public static function make(): static
+    {
+        return app(self::class);
+    }
+
+    public static function get(): static
+    {
+        /** @var static $plugin */
+        $plugin = filament(app(static::class)->getId());
+
+        return $plugin;
+    }
+
     public function getId(): string
     {
         return 'filament-expiration-notice';
@@ -20,18 +35,5 @@ class ExpirationNoticePlugin implements Plugin
     public function boot(Panel $panel): void
     {
         //
-    }
-
-    public static function make(): static
-    {
-        return app(static::class);
-    }
-
-    public static function get(): static
-    {
-        /** @var static $plugin */
-        $plugin = filament(app(static::class)->getId());
-
-        return $plugin;
     }
 }

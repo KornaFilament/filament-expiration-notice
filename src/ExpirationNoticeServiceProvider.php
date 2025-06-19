@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MarcelWeidum\ExpirationNoticePlugin;
 
 use Filament\Support\Assets\AlpineComponent;
@@ -16,7 +18,7 @@ use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class ExpirationNoticeServiceProvider extends PackageServiceProvider
+final class ExpirationNoticeServiceProvider extends PackageServiceProvider
 {
     public static string $name = 'filament-expiration-notice';
 
@@ -29,7 +31,7 @@ class ExpirationNoticeServiceProvider extends PackageServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
-        $package->name(static::$name)
+        $package->name(self::$name)
             ->hasCommands($this->getCommands())
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
@@ -54,7 +56,7 @@ class ExpirationNoticeServiceProvider extends PackageServiceProvider
         }
 
         if (file_exists($package->basePath('/../resources/views'))) {
-            $package->hasViews(static::$viewNamespace);
+            $package->hasViews(self::$viewNamespace);
         }
     }
 
@@ -78,7 +80,7 @@ class ExpirationNoticeServiceProvider extends PackageServiceProvider
 
         // Handle Stubs
         if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
+            foreach (app(Filesystem::class)->files(__DIR__.'/../stubs/') as $file) {
                 $this->publishes([
                     $file->getRealPath() => base_path("stubs/filament-expiration-notice/{$file->getFilename()}"),
                 ], 'filament-expiration-notice-stubs');
@@ -102,7 +104,7 @@ class ExpirationNoticeServiceProvider extends PackageServiceProvider
         return [
             // AlpineComponent::make('filament-expiration-notice', __DIR__ . '/../resources/dist/components/filament-expiration-notice.js'),
             // Css::make('filament-expiration-notice-styles', __DIR__ . '/../resources/dist/filament-expiration-notice.css'),
-            Js::make('filament-expiration-notice-scripts', __DIR__ . '/../resources/dist/filament-expiration-notice.js'),
+            Js::make('filament-expiration-notice-scripts', __DIR__.'/../resources/dist/filament-expiration-notice.js'),
         ];
     }
 
