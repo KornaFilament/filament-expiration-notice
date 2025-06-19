@@ -24,10 +24,6 @@ composer require marcelweidum/filament-expiration-notice
 php artisan vendor:publish --tag="filament-expiration-notice-views"
 ```
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
 ## Contributing
 
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
