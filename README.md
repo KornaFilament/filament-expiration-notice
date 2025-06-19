@@ -1,10 +1,9 @@
 # Filament Expiration Notice
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/marcelweidum/filament-expiration-notice.svg?style=flat-square)](https://packagist.org/packages/marcelweidum/filament-expiration-notice)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/marcelweidum/filament-expiration-notice/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/marcelweidum/filament-expiration-notice/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/marcelweidum/filament-expiration-notice.svg?style=flat-square)](https://packagist.org/packages/marcelweidum/filament-expiration-notice)
-
-Package is compatible with Filament `3.x` and `4.x`.
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/marcelweidum/filament-expiration-notice.svg)](https://packagist.org/packages/marcelweidum/filament-expiration-notice)
+[![Total Downloads](https://img.shields.io/packagist/dt/marcelweidum/filament-expiration-notice.svg)](https://packagist.org/packages/marcelweidum/filament-expiration-notice)
+![Filament 3.x](https://img.shields.io/badge/Filament-3.x-EBB304)
+![Filament 4.x](https://img.shields.io/badge/Filament-4.x-007ec6)
 
 <img src="./art/screenshot.png">
 
