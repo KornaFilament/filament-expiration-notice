@@ -5,9 +5,12 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/marcelweidum/filament-expiration-notice/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/marcelweidum/filament-expiration-notice/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/marcelweidum/filament-expiration-notice.svg?style=flat-square)](https://packagist.org/packages/marcelweidum/filament-expiration-notice)
 
+Package is compatible with Filament `3.x` and `4.x`.
 
+<img src="./art/screenshot.png">
 
-Customize the livewire expiration notice.
+> [!CAUTION]
+> The current release is an **Alpha** release — use it cautiously in production.
 
 ## Installation
 
@@ -17,43 +20,11 @@ You can install the package via composer:
 composer require marcelweidum/filament-expiration-notice
 ```
 
-You can publish and run the migrations with:
 
-```bash
-php artisan vendor:publish --tag="filament-expiration-notice-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-expiration-notice-config"
-```
-
-Optionally, you can publish the views using
+When you want to customize the expiration modal you can publish the view by running:
 
 ```bash
 php artisan vendor:publish --tag="filament-expiration-notice-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-## Usage
-
-```php
-$expirationNoticePlugin = new MarcelWeidum\ExpirationNoticePlugin();
-echo $expirationNoticePlugin->echoPhrase('Hello, MarcelWeidum!');
-```
-
-## Testing
-
-```bash
-composer test
 ```
 
 ## Changelog
