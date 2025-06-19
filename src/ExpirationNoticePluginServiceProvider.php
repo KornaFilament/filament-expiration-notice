@@ -101,7 +101,7 @@ class ExpirationNoticePluginServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('filament-expiration-notice', __DIR__ . '/../resources/dist/components/filament-expiration-notice.js'),
-            Css::make('filament-expiration-notice-styles', __DIR__ . '/../resources/dist/filament-expiration-notice.css'),
+            // Css::make('filament-expiration-notice-styles', __DIR__ . '/../resources/dist/filament-expiration-notice.css'),
             Js::make('filament-expiration-notice-scripts', __DIR__ . '/../resources/dist/filament-expiration-notice.js'),
         ];
     }
