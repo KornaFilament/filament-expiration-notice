@@ -10,11 +10,11 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;
 use Livewire\Features\SupportTesting\Testable;
+use MarcelWeidum\ExpirationNoticePlugin\Commands\ExpirationNoticePluginCommand;
+use MarcelWeidum\ExpirationNoticePlugin\Testing\TestsExpirationNoticePlugin;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MarcelWeidum\ExpirationNoticePlugin\Commands\ExpirationNoticePluginCommand;
-use MarcelWeidum\ExpirationNoticePlugin\Testing\TestsExpirationNoticePlugin;
 
 class ExpirationNoticePluginServiceProvider extends PackageServiceProvider
 {
