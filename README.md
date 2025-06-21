@@ -5,6 +5,8 @@
 ![Filament 3.x](https://img.shields.io/badge/Filament-3.x-EBB304)
 ![Filament 4.x](https://img.shields.io/badge/Filament-4.x-007ec6)
 
+Customize the 'Page expired' livewire message into a filament modal.
+
 <img src="./art/screenshot.png">
 
 > [!CAUTION]
