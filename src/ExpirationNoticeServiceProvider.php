@@ -62,7 +62,7 @@ final class ExpirationNoticeServiceProvider extends PackageServiceProvider
         );
     }
 
-    protected function getAssetPackageName(): ?string
+    protected function getAssetPackageName(): string
     {
         return 'marcelweidum/filament-expiration-notice';
     }
