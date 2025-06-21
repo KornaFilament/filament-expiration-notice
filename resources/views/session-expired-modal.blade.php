@@ -10,11 +10,11 @@
     footer-actions-alignment="center"
 >
     <x-slot name="heading">
-        {{ __('Session Expired') }}
+        {{ __(config('filament-expiration-notice.heading')) }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Your page session has expired due to inactivity. Please refresh the page to continue.') }}
+        {{ __(config('filament-expiration-notice.description')) }}
     </x-slot>
 
     <x-slot name="footerActions">
@@ -24,7 +24,7 @@
             color="primary"
             class="w-full"
         >
-            {{ __('Refresh page') }}
+            {{ __(config('filament-expiration-notice.refresh_button')) }}
         </x-filament::button>
     </x-slot>
 </x-filament::modal>
