@@ -20,16 +20,16 @@ You can install the package via composer:
 composer require marcelweidum/filament-expiration-notice
 ```
 
-(Optional) When you want to publish the config file:
-
-```bash
-php artisan vendor:publish --tag="filament-expiration-notice-config"
-```
-
 (Optional) When you want to customize the expiration modal you can publish the view by running:
 
 ```bash
 php artisan vendor:publish --tag="filament-expiration-notice-views"
+```
+
+If you want to customize the translations, you can publish the translations by running:
+
+```bash
+php artisan vendor:publish --tag="filament-expiration-notice-translations"
 ```
 
 ## Contributing

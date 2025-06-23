@@ -10,11 +10,11 @@
     footer-actions-alignment="center"
 >
     <x-slot name="heading">
-        {{ __(config('filament-expiration-notice.heading')) }}
+        {{ __('filament-expiration-notice::expiration-notice.heading') }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __(config('filament-expiration-notice.description')) }}
+        {{ __('filament-expiration-notice::expiration-notice.description') }}
     </x-slot>
 
     <x-slot name="footerActions">
@@ -24,7 +24,7 @@
             color="primary"
             class="w-full"
         >
-            {{ __(config('filament-expiration-notice.refresh_button')) }}
+            {{ __('filament-expiration-notice::expiration-notice.button') }}
         </x-filament::button>
     </x-slot>
 </x-filament::modal>
