@@ -10,9 +10,6 @@ Customize the 'Page expired' livewire message into a filament modal.
 
 <img src="./art/screenshot.png">
 
-> [!CAUTION]
-> The current release is a **beta** release — use it cautiously in production.
-
 ## Installation
 
 You can install the package via composer:
