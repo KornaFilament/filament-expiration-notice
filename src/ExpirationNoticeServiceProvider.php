@@ -71,7 +71,7 @@ final class ExpirationNoticeServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            Js::make('filament-expiration-notice-scripts', __DIR__.'/../resources/dist/filament-expiration-notice.js'),
+            Js::make('filament-expiration-notice-scripts', __DIR__ . '/../resources/dist/filament-expiration-notice.js'),
         ];
     }
 }
