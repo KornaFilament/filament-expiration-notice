@@ -55,7 +55,7 @@ final class ExpirationNoticeServiceProvider extends PackageServiceProvider
         );
 
         FilamentView::registerRenderHook(
-            PanelsRenderHook::PAGE_START,
+            PanelsRenderHook::BODY_START,
             fn (): View => view('filament-expiration-notice::session-expired-modal'),
         );
     }
