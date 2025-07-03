@@ -8,6 +8,7 @@
     :close-by-escaping="false"
     :close-button="false"
     footer-actions-alignment="center"
+    display-classes="flex"
 >
     <x-slot name="heading">
         {{ __('filament-expiration-notice::expiration-notice.heading') }}
