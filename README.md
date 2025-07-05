@@ -24,7 +24,7 @@ composer require marcelweidum/filament-expiration-notice
 php artisan vendor:publish --tag="filament-expiration-notice-views"
 ```
 
-If you want to customize the translations, you can publish the translations by running:
+(Optional) If you want to customize the translations, you can publish the translations by running:
 
 ```bash
 php artisan vendor:publish --tag="filament-expiration-notice-translations"
