@@ -8,7 +8,11 @@
 
 Customize the 'Page expired' livewire message into a filament modal.
 
-[<img src="https://github.com/MarcelWeidum/filament-expiration-notice/raw/main/art/screenshot.png">](https://github.com/MarcelWeidum/filament-expiration-notice)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="art/cover-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="art/cover-light.png">
+  <img alt="Filament Passkeys cover" src="art/cover-light.png">
+</picture>
 
 ## Installation
 
